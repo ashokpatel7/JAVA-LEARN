@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>login</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            body{
+                width: 500px;
+                height: 450px;
+                border: 2px solid rgb(162, 222, 177);
+                border-radius:  30px 0px 30px 0px;
+                text-align: center;
+                margin: 180px 550px;
+            }
+            h2{
+                justify-content: center;
+                color: rgb(11, 15, 15);
+                background-color: rgba(180, 60, 60, 0.827);
+                line-height: 70px;
+                margin-top: 0px;
+                border-radius: 27px 0px 0px 0px;
+                font-size: 35px;
+                
+            }
+        input[type="text"],
+        input[type="password"]
+            {
+              
+              background-color: transparent;
+              margin: 20px;
+              width: 300px;
+              line-height: 35px;
+              border: 2px solid rgb(187, 213, 168); 
+              border-radius: 0px 20px 20px 0px;
+              font-size: 17px;
+              font-style: normal;
+              font-family: verdana;
+           }
+           input[type="submit"]{
+            background-color: rgb(95, 203, 62);
+              margin: 20px;
+              width: 350px;
+              line-height: 35px;
+              border: 2px solid rgb(187, 213, 168); 
+              border-radius: 20px;
+              font-size: 20px;
+              font-style: normal;
+              font-family: verdana;
+              
+           }
+           p{
+            font-size: 20px;
+            
+           }
+           .link{
+            text-decoration: none;
+            font-size: 20px;
+           }
+           .log:hover{
+               background-color: rgb(34, 9, 198);
+           }
+           .ho:hover{
+            border-color: blue;
+           }
+           .link:hover{
+            color: rgb(232, 6, 6);
+           }
+        </style>
+    </head>
+    <body>
+      <form>
+      <header>
+      <h2>  Sign In </h2>
+      </header>
+      <div><input type="text" class="ho" placeholder="  Username"required>
+        <i class='bx bxs-user'></i>
+     </div>
+     <div><input type="password" class="ho" placeholder="  Password"required>
+        <i class='bx bxs-lock-alt'></i>
+    </div>
+    <div class="forgetpass"><a href="#" class="link"onclick="message()">Forget Password</a>  
+
+      <input type="submit" class="log" value="Login">
+      <p>Not a member?<a href="register.php" class="link"> Register Here</a></p>
+      </form>
+      <script> 
+         function message()
+         {
+          alert("Passsword Required");
+         }
+      </script>
+    </body>
+</html>
